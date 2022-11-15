@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Radio station</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <style>
+        .navigation {
+            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: left;
+            list-style: none;
+            margin: 0; 
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: rgb(236, 233, 233);
+            align-items:baseline;
+            justify-content: space-around;
+        }
+        nav {
+            background: rgb(91, 91, 94);
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+	font-family: 'Comfortaa', cursive;
+}
+body{
+	background: url('concert.jpg') no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 80vh;
+   
+    
+}
+.body-1{
+position: absolute;
+margin-top: 200px;
+margin-left: 400px;
+color: black;
+
+}
+.wrapper{
+	margin: 200px auto 200px auto;
+    background: rgba(0, 0, 0,0.6);
+    max-width: 550px;
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.wrapper .input {
+    width: 85%;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.searchbtn {
+    background: #ffec00;
+    width: 10%;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.searchbtn .fas{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+      
+.genres{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: darkblue;
+    justify-items:left;
+            }
+            .genres li {
+                background-color: grey;
+                border: 1px solid black;
+                border-radius: 30%;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 1000px;
+            }
+            .types1 {
+                background-color: grey;
+                border: 1px solid black;
+                border-radius: 30%;
+                justify-content: space-between;
+                color: black;
+
+            }
+            .genres li .types1 {
+                justify-content:right;
+            }
+          
+
+          .genres{
+                display: flex;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: darkblue;
+                justify-items:left;
+            }
+          .genres li {
+                background-color: grey;
+                border: 1px solid black;
+                border-radius: 30%;
+                display: flex;
+                justify-content: space-between;
+                margin-left: 1000px;
+            }
+          .types1 {
+                background-color: grey;
+                border: 1px solid black;
+                border-radius: 30%;
+                justify-content: space-between;
+                color: black;
+
+            }
+            .genres li .types1 {
+                justify-content:right;
+            }
+          .footer{
+              justify-items: left;
+              color: darkgrey;
+          }
+
+          #mainWrapper {
+              display: flex;
+          }
+
+          .stationList {
+              display: grid;
+              grid-template-columns: 33% 33% 33%;
+          }
+          .Genres{
+              display: flex;
+              
+          }
+          li:hover{
+              background-color:rgb(96, 177, 85);
+          }
+          .list{
+              background-color: bisque;
+              border: 1px solid black;
+              border-radius: 40%;
+              justify-content: space-between;
+              padding: 11px 11px;
+              margin-left: 4px;
+              margin-bottom: 4px;
+              list-style-type: none;
+          }
+         
+
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+         
+  </style>
+  
+
+</head>
+<body> 
+    <header >
+        <div class="body-1"><b>WORLD'S LARGEST FREE INTERNET RADIO DIRECTORY</b></div>
+        <h1>My radio station</h1>
+        <nav>
+           
+            <ul class="navigation">
+                <li >
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="login.html">Log in</a>
+                </li>
+                <li>
+                    <a href="signup.html">Register</a>
+                </li>
+                <li>
+                    <a href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+            
+            <ul class="navigation">
+                <li>
+                    <a href="login.html">Log in</a>
+                </li>
+                <li>
+                    <a href="signup.html">Registar</a>
+                </li>
+            </ul>
+        </nav>
+       
+    </header>
+ 
+    <form action="search.php" class="wrapper">
+        <input type="text" class="input" 
+        placeholder="What are you looking for?">
+        <button class="searchbtn"><i class="fas fa-search"></i></button>
+    </form>
+
+    <div id="mainWrapper">
+        <main>
+            <section id="featured">
+                <h2>Featured radio stations</h2>
+                <ul class="stationList">
+                    
+                    <li>
+                        <a href="https://amazingradios.com/amazing-smooth-jazz" target="blank">
+                        <img src="images/amazing-smooth-jazz-w180.webp" alt="jazz">
+                    </a>
+                    <p>Amazing smooth and jazz</p>
+                    </li>
+                        
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-vocals" target="blank" >
+                        <img src="images/amazing-vocals-w180.webp" alt="vocals">
+                        </a>
+                        <p>Amazing vocals</p>
+                    </li>
+
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-vocals" target="blank" >
+                        <img src="images/amazing-vocals-w180.webp" alt="vocals">
+                        </a>
+                        <p>Amazing vocals</p>
+                    </li>
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-smooth-jazz" target="blank">
+                        <img src="images/amazing-smooth-jazz-w180.webp" alt="jazz">
+                    </a>
+                    <p>Amazing smooth and jazz</p>
+                    </li>
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-vocals" target="blank" >
+                        <img src="images/amazing-vocals-w180.webp" alt="vocals">
+                        </a>
+                        <p>Amazing vocals</p>
+                    </li>
+
+                    <li>
+                        <a href="https://amazingradios.com/amazing-smooth-jazz" target="blank">
+                        <img src="images/amazing-smooth-jazz-w180.webp" alt="jazz">
+                    </a>
+                    <p>Amazing smooth and jazz</p>
+                    </li>
+
+                    
+                </ul>
+            </section>
+
+            <section id="popular">
+
+                <h2>Popular radio stations</h2>
+                <ol class="stationList">
+                
+                    <li>
+                        <a href="https://amazingradios.com/amazing-80s" target="blank">
+                        <img src="images/amazing-80s-w180.webp" alt="amazing" ></a>
+                        <p>Amazing 80</p>
+                    
+                    </li>
+            
+                    <li>
+                        <a href="https://amazingradios.com/amazing-blues" target="blank">
+                        <img src="images/amazing-blues-w180.webp" alt="Blues" ></a>
+                        <p>Amazing Blues </p>
+                    </li>
+                
+                    <li>
+                        <a href="https://amazingradios.com/amazing-chillhop" target="blank">
+                            <img src="images/amazing-chillhop-w180.webp" alt="chillpop" >
+                        </a>
+                        <p>Ammazing chillpop</p>
+                        </li>
+                    
+                    <li> 
+                        <a href="https://amazingradios.com/amazing-chillout" target="blank">
+                            <img src="images/amazing-chillout-w180.webp" alt="chillout" >
+                        </a>
+                        <p>Amazing chillout</p>
+                    </li>
+                    <li>
+                        <a href="https://amazingradios.com/amazing-classic-hits" target="blank">
+                            <img src="images/amazing-classic-hits-w180.webp" alt="classic">
+                        </a> 
+                        <p>Amazing classic hits</p>
+                    </li>
+                    <li>
+                        <a href="https://amazingradios.com/amazing-chillhop" target="blank">
+                            <img src="images/amazing-chillhop-w180.webp" alt="chillpop" >
+                        </a>
+                        <p>Ammazing chillpop</p>
+                        </li>
+                </ol>
+            </section>
+
+
+
+            <h4><b>Genres</b></h4>
+
+            
+                <ul class="Genres">
+                <li class="list" >Ambient</li>
+                <li class="list" >Blues</li>
+                <li class="list" >Clasical</li>
+                <li class="list">Clasical</li>
+                <li class="list">Country</li>
+                <li class="list">Electronic</li>
+                <li class="list">Emo</li>
+                <li class="list">Folk</li>
+                <li class="list">Hardcore</li>
+                <li class="list">Hip Hop</li>
+                <li class="list">Indie</li>
+                <li class="list">Jazz</li>
+                <li class="list">Latin</li>
+                <li class="list">Rock</li>
+                </ul>
+
+                <ul class="Genres">
+                <li class="list">Acoustic</li>
+                <li class="list">Ambient</li>
+                <li class="list">Blues</li>
+                <li class="list">Clasical</li>
+                <li class="list">Country</li>
+                <li class="list">Indie</li>
+                <li class="list">Acoustic</li>
+                <li class="list">Ambient</li>
+                <li class="list">Blues</li>
+                <li class="list">Clasical</li>
+                <li class="list">Country</li>
+                <li class="list">Electronic</li>
+                <li class="list">Emo</li>
+                <li class="list">Folk</li>
+            
+            </ul>
+            
+
+
+        </main>
+
+        <aside>
+            <p><b>Most popular.</b></p>
+
+            <ol class="stationList">
+            <li> 
+                <a href="https://amazingradios.com/amazing-chillout" target="blank">
+                    <img src="images/amazing-chillout-w180.webp" alt="chillout" >
+                </a>
+                <p>Amazing chillout</p>
+            </li>
+            <li>
+                <a href="https://amazingradios.com/amazing-classic-hits" target="blank">
+                    <img src="images/amazing-classic-hits-w180.webp" alt="classic">
+                </a> 
+                <p>Amazing classic hits</p>
+            </li>
+            <li>
+                <a href="https://amazingradios.com/amazing-chillhop" target="blank">
+                    <img src="images/amazing-chillhop-w180.webp" alt="chillpop" >
+                </a>
+                <p>Ammazing chillpop</p>
+                </li>
+        </ol>
+
+        </aside>
+    </div>
+
+   
+   
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Next tuner</h4>
+                <ul>
+                    <li><a href="#">2018 Next tuner</a></li>
+                    <a href="signup.html" > Register </a>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>LEGAl</h4>
+                <ul>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>SERVICE</h4>
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Apps</a></li>
+                    <li><a href="#">Help and FAQ</a></li>
+                    <li><a href="#">Broadcasters</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>APPS</h4>
+                <ul>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Ipad</a></li>
+                    <li><a href="#">Android</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

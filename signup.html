@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8">
+ 
+
+        <style>
+           @import url('https://fonts.googleapis.com/css?family=Comfortaa');
+           *{
+        	margin: 0;
+	        padding: 0;
+	        outline: none;
+        	box-sizing: border-box;
+	        font-family: 'Comfortaa', cursive;
+            
+        }
+
+             .navigation {
+            text-align: center;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: left;
+            list-style: none;
+            margin: 0; 
+            
+        }
+
+        nav a {
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: rgb(236, 233, 233);
+            align-items:baseline;
+            justify-content: space-around;
+        }
+        nav {
+            background: rgb(91, 91, 94);
+            display: flex;
+            justify-content: space-between;
+        }
+        .username {
+            
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 300px;
+          
+           
+        }
+        .input {
+            margin: 50px;
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+        }
+       #btn{
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  margin-left: 350px;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+}
+.pink{
+    background-color: #f0aac5;
+}
+</style>
+    </head>
+    <header>
+    <body class="pink">
+        <header >
+            <h1>Sign up</h1>
+            <nav>
+               
+                <ul class="navigation">
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Log in</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">Register</a>
+                    </li>
+                    <li>
+                        <a href="contactus.html">Contact Us</a>
+                    </li>
+                </ul>
+                
+                <ul class="navigation">
+                    <li>
+                        <a href="login.html">Log in</a>
+                    </li>
+                    <li>
+                        <a href="signup.html">Registar</a>
+                    </li>
+                </ul>
+            </nav>
+           
+        </header>
+        </style>
+
+    </head>
+   
+<div >
+    <label class="username" for="uname"><b>Username:</b></label>
+    <input type="text" class="input" placeholder="Enter Username" name="uname" required>
+</div>
+</br>
+<div>
+    <label class="username" for="psw"><b>Password:</b></label>
+    <input type="password" class="input" placeholder="Enter Password" name="psw" required>
+</div>
+</br>
+<div>
+    <label for="psw" class="username"><b>Enter your password again:</b></label>
+    <input type="password" class="input" placeholder="Enter Password again" name="pswa" required>
+</div>
+    
+</br>
+
+<button id="btn">Sign up</button>
+    
+</div>
+</header>
+</body>
+  </html>
